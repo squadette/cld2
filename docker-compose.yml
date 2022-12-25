@@ -1,0 +1,14 @@
+version: "3.3"
+
+volumes:
+  cld2dev-rvm:
+
+services:
+  shell:
+    build: .
+    volumes:
+      - type: bind
+        source: .
+        target: /var/cld2/src
+        consistency: cached
+      - cld2dev-rvm:/var/cld2/rvm
