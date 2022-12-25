@@ -10,6 +10,7 @@ ENV PACKAGES  "\
     libyaml-dev \
     vim \
     less \
+    ssh \
     git"
 
 # Install dependencies and clean documentation
