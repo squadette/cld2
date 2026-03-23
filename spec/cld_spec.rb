@@ -8,7 +8,7 @@ describe CLD do
 
     it { subject[:name].should eq("ENGLISH") }
     it { subject[:code].should eq("en") }
-    it { subject[:reliable].should be_true }
+    it { subject[:reliable].should be true }
   end
 
   context "French text" do
@@ -16,7 +16,7 @@ describe CLD do
 
     it { subject[:name].should eq("FRENCH") } 
     it { subject[:code].should eq("fr") }
-    it { subject[:reliable].should be_true }
+    it { subject[:reliable].should be true }
   end
 
   context "Italian text" do
@@ -24,7 +24,7 @@ describe CLD do
 
     it { subject[:name].should eq("ITALIAN") } 
     it { subject[:code].should eq("it") }
-    it { subject[:reliable].should be_true }
+    it { subject[:reliable].should be true }
   end
   
   context "French in HTML - using CLD html " do
@@ -61,7 +61,7 @@ describe CLD do
 
     it { subject[:name].should eq("Unknown") }
     it { subject[:code].should eq("un") }
-    it { subject[:reliable].should_not be_true }
+    it { subject[:reliable].should_not be true }
   end
 
   context "nil for text" do
@@ -69,7 +69,7 @@ describe CLD do
 
     it { subject[:name].should eq("Unknown") }
     it { subject[:code].should eq("un") }
-    it { subject[:reliable].should_not be_true }
+    it { subject[:reliable].should_not be true }
   end
 
 end
