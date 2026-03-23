@@ -1,5 +1,3 @@
-version: "3.3"
-
 volumes:
   cld2dev-rvm:
 

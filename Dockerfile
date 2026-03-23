@@ -1,4 +1,4 @@
-FROM ubuntu:16.04
+FROM ubuntu:22.04
 
 ENV DEBIAN_FRONTEND noninteractive
 
@@ -8,6 +8,7 @@ RUN apt-get update && apt-get install -y curl
 ENV PACKAGES  "\
     build-essential \
     libyaml-dev \
+    gnupg2 \
     vim \
     less \
     ssh \
