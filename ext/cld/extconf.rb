@@ -32,6 +32,8 @@ $defs.push("-std=c++98")
 
 if have_library('stdc++')
   create_makefile('libcld2')
+else
+  abort "libstdc++ is not found"
 end
 
 # to clean up object files under internal subdirectory.
